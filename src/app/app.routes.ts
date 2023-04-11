@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'modal',
+    loadComponent: () => import('./modal/modal.page').then( m => m.ModalPage)
+  },
 ];
